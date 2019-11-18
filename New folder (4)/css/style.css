@@ -1,0 +1,71 @@
+body {
+  background: url(../img/1.jpg);
+}
+
+.dropWrapper {
+  border: 1px solid #ddd;
+  -webkit-box-shadow: inset 0px 0px 25px 0px rgba(160, 160, 160, 0.2);
+          box-shadow: inset 0px 0px 25px 0px rgba(160, 160, 160, 0.2);
+  padding: 50px;
+  border-radius: 25px;
+}
+
+.dropWrapper .drop {
+  padding: 50px;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 2em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: rgba(107, 90, 90, 0.815);
+  border: 1px dashed #530c0c;
+}
+
+.dropWrapper .drop p {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropWrapper .drop i {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropWrapper .drop.active p {
+  pointer-events: none;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.dropWrapper .drop.active i {
+  -webkit-animation: ani 1s infinite;
+          animation: ani 1s infinite;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: none;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+  to {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+  to {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
